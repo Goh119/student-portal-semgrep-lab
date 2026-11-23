@@ -1,0 +1,4 @@
+{% extends 'base.html' %}{% block title %}Login · UniPortal{% endblock %}{% block content %}
+<section class="authcard"><div class="eyebrow">SECURE STUDENT PORTAL</div><h1>Welcome back</h1><p class="muted">Log in to access assignments, academic records, messages and your profile.</p>
+<form method="post" action="{{ url_for('login') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><label>Username<input name="username" autocomplete="username" required maxlength="80" placeholder="student1"></label><label>Password<input name="password" type="password" autocomplete="current-password" required placeholder="Your password"></label><button type="submit" class="primary wide">Sign in</button></form>
+<div class="hint"><strong>Demo accounts (local lab only)</strong><div>Student: <code>student1</code> / <code>Student@12345</code></div><div>Lecturer: <code>lecturer1</code> / <code>Lecturer@12345</code></div></div></section>{% endblock %}

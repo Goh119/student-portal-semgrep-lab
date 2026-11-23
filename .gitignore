@@ -1,0 +1,17 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+uploads/
+uploads_secure/
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.*
+!.env.example
+semgrep-results.json
+semgrep-results.txt
+semgrep-report.txt
+semgrep-python-results.json
+semgrep-full-results.json
